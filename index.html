@@ -48,6 +48,11 @@
     <script>
 
         function gtagPageView(title, url){
+            gtag('config', 'G-XVJ29EC28D');
+            gtag('set', 'page_path', url);
+            gtag('event', 'page_view');
+            console.log('trebalo bi da je poslato')
+            /*
             gtag('config', 'G-XVJ29EC28D', {
                 'page_title':title,
                 'page_path':url
@@ -55,6 +60,7 @@
             gtag('test_title', title)
             gtag('test_path', url)
             console.log('poslato na google valjda')
+            */
         }
 
 
