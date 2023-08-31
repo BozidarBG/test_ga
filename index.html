@@ -49,12 +49,16 @@
 
         function gtagPageView(title, url){
             gtag('config', 'G-XVJ29EC28D');
+            /*
             gtag('event', 'klik_na_link_event', {
                 'klik_na_link_tekst': title,
                 'klik_na_link_href': url
 
 
             });
+            */
+            gtag('klik_na_link_tekst',title);
+                gtag('klik_na_link_href', url);
             console.log('trebalo bi da je poslato '+title+' '+url)
 
         }
