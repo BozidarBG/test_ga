@@ -2,16 +2,14 @@
 <html lang="en">
 <head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4CWPST3R12"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RYHTQX4F39"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){
-    dataLayer.push(arguments);
-    }
-  gtag('js', new Date());
-
-  gtag('config', 'G-4CWPST3R12');
-</script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-RYHTQX4F39');
+  </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,22 +31,27 @@
     <script>
 
         function gtagPageView(title, url){
-            gtag('config', 'G-4CWPST3R12');
-            /*
-            gtag('event', 'klik_na_link_event', {
-                'klik_na_link_tekst': title,
-                'klik_na_link_href': url
-
-
-            });
-            */
-                //gtag('klik_na_link_tekst',title);
-                //gtag('klik_na_link_href', url);
-                window.dataLayer.push({
+           
+                gtag({
                     'event':'virtualPageview',
                     'pageUrl': url,
                     'pageTitle':title
                 });
+                gtag('config', 'G-RYHTQX4F39', {
+                    'event':'virtualPageview',
+                    'pageUrl': url,
+                    'pageTitle':title
+                });
+                gtag('config', 'G-RYHTQX4F39', {
+                    'event':'virtualPageview',
+                    'page_path': url,
+                    'page_title':title
+                });
+                gtag('config', 'G-RYHTQX4F39', {
+                    'page_path': url,
+                    'page_title':title
+                });
+
             console.log('trebalo bi da je poslato '+title+' '+url)
 
         }
