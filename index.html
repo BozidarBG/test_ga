@@ -15,7 +15,10 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
   
-    gtag('config', 'G-RYHTQX4F39');
+    gtag('config', 'G-RYHTQX4F39',{
+        send_page_view:false
+    });
+
   </script>
 
     <meta charset="UTF-8">
@@ -28,7 +31,7 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <h1>Prva strana - home - izmena 2</h1>
+    <h1>Prva strana - home - izmena 3</h1>
     <p><a class="spa_klik" href="/spa_prva_strana">SPA 1. strana</a></p>
     <p><a class="spa_klik" href="/spa_druga_strana">SPA 2. strana</a></p>
     <p><a class="spa_klik" href="/spa_treca_strana">SPA 3. strana</a></p>
@@ -52,9 +55,9 @@
                 */
            
                 gtag('config', 'G-RYHTQX4F39', {
-                    'event':'virtualPageview',
-                    'pageUrl': url,
-                    'pageTitle':title
+                    'event':'page_view',
+                    'page_location': url,
+                    'page_title':title
                 });
                 /*
                 gtag('config', 'G-RYHTQX4F39', {
