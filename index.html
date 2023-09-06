@@ -2,22 +2,20 @@
 <html lang="en">
 <head>
 <!-- Google tag (gtag.js) -->
-<!-- Google Tag Manager -->
+<!-- Google Tag Manager 
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-PPD6TL23');</script>
-    <!-- End Google Tag Manager -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RYHTQX4F39"></script>
+  End Google Tag Manager -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4RPXLETTJ4"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
   
-    gtag('config', 'G-RYHTQX4F39',{
-        send_page_view:false
-    });
+    gtag('config', 'G-G-4RPXLETTJ4');
 
   </script>
 
@@ -26,12 +24,12 @@
     <title>prva strana</title>
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript)
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPD6TL23"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+    End Google Tag Manager (noscript) -->
 
-    <h1>Prva strana - home - izmena 3</h1>
+    <h1>Prva strana - home - izmena x -1</h1>
     <p><a class="spa_klik" href="/spa_prva_strana">SPA 1. strana</a></p>
     <p><a class="spa_klik" href="/spa_druga_strana">SPA 2. strana</a></p>
     <p><a class="spa_klik" href="/spa_treca_strana">SPA 3. strana</a></p>
@@ -45,31 +43,12 @@
     <script>
 
         function gtagPageView(title, url){
-                 /*
-           
-                gtag({
-                    'event':'virtualPageview',
-                    'pageUrl': url,
-                    'pageTitle':title
+
+                gtag('event', 'link_click', {
+                    'link_url': url,
+                    'link_text':title
                 });
-                */
-           
-                gtag('config', 'G-RYHTQX4F39', {
-                    'event':'page_view',
-                    'page_location': url,
-                    'page_title':title
-                });
-                /*
-                gtag('config', 'G-RYHTQX4F39', {
-                    'event':'virtualPageview',
-                    'page_path': url,
-                    'page_title':title
-                });
-                gtag('config', 'G-RYHTQX4F39', {
-                    'page_path': url,
-                    'page_title':title
-                });
-                */
+
 
             console.log('trebalo bi da je poslato '+title+' '+url)
 
